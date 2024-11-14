@@ -10,7 +10,7 @@ const searchInput = document.getElementById('search');
 const searchButton = document.getElementById('search-button');
 const bookList = document.getElementById('book-list');
 const borrowedList = document.getElementById('borrowed-list');
-
+// Render Books
 function renderBooks(booksToRender) {
   bookList.innerHTML = '';
   booksToRender.forEach(book => {
@@ -27,7 +27,7 @@ function renderBooks(booksToRender) {
       bookList.appendChild(bookCard);
   });
 }
-
+// Update Book Availability
 function updateBookAvailability(bookId) {
   const book = books.find(b => b.id === bookId);
   if (book && book.available > 0) {
