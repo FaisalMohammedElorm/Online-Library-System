@@ -1,11 +1,11 @@
 const books = [
-  { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', available: 3 },
+  { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', available: 3 }, 
   { id: 2, title: '1984', author: 'George Orwell', available: 2 },
   { id: 3, title: 'To Kill a Mockingbird', author: 'Harper Lee', available: 1 },
   { id: 4, title: 'Pride and Prejudice', author: 'Jane Austen', available: 4 },
   { id: 5, title: 'Moby Dick', author: 'Herman Melville', available: 0 },
 ];
-
+// Search Button Functionality
 const searchInput = document.getElementById('search');
 const searchButton = document.getElementById('search-button');
 const bookList = document.getElementById('book-list');
